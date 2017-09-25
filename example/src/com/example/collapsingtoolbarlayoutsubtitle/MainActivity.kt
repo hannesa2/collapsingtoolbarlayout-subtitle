@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setSupportActionBar(toolbar)
         floatingActionButton.setOnClickListener(this)
         toolbarLayout.setCollapsedTitleColorAttr(R.attr.colorAccent)
+
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     override fun onClick(v: View) {
